@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+}
+
+#center {
+  display: grid;
+  place-items: center;
+}
+
+.flashlight {
+  margin: 60px;
+  height: 35px;
+  width: 150px;
+  background-color: red;
+  border-radius: 10%/20%;
+  position: relative;
+}
+
+.flashlight::before, .flashlight::after {
+  position: absolute;
+  content: "";
+}
+
+.flashlight::before {
+  height: 35px;
+  width: 0;
+  border-right: 20px solid orange;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+  top: -15px;
+  left: 140px;
+}
+
+.flashlight::after {
+  height: 75px;
+  width: 15px;
+  background-color: red;
+  top: -20px;
+  left: 160px;
+  filter: drop-shadow(0 0 8px orangered);
+}
+
+.light {
+  position: relative;
+  border-right: 150px solid yellow;
+  border-bottom: 60px solid transparent;
+  border-top: 60px solid transparent;
+  border-radius: 70px;
+  filter: drop-shadow(0 0 25px yellow) blur(2px);
+  top: -135px;
+  left: 180px;
+}
