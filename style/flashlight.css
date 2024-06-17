@@ -45,7 +45,7 @@ body {
   border-right: 150px solid yellow;
   border-bottom: 60px solid transparent;
   border-top: 60px solid transparent;
-  border-radius: 70px;
+  border-radius: 80%;
   filter: drop-shadow(0 0 25px yellow) blur(2px);
   top: -135px;
   left: 180px;
